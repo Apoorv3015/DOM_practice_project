@@ -51,6 +51,7 @@ const userList = document.querySelector('#users');
 myForm.addEventListener('submit', onSubmit);
 
 function onSubmit(e) {
+    //Prevent default
     e.preventDefault();
     
     if(nameInput.value === '' || emailInput.value === '') {
